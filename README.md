@@ -1,2 +1,2 @@
 # reaction-game
-A basic reaction game built whilst learning JavaScript
+Reaction game built whilst learning fundamentals of JavaScript.
