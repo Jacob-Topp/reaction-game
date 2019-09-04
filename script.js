@@ -4,13 +4,13 @@
 	
 		return Math.floor(Math.random() * (max - min + 1) ) + min;
 			
-		}
+	}
 	
 	function random_item(items){
 		  
 		return items[Math.floor(Math.random()*items.length)];
 		
-		}
+	}
 
 
 // Random Shape Generation and Reaction Timer
@@ -53,6 +53,12 @@
 				var reactionTime = ((endTimer - startTimer)/1000);
 				
 				document.getElementById("yourTime").innerHTML = reactionTime + "s";
+				
+	// Best Time Log
+				var bestTime = document.getElementById("bestTime").innerHTML;
+					if (reactionTime < bestTime || bestTime == 0) {
+						document.getElementById("bestTime").innerHTML = reactionTime
+					}
 				
 	// New Shape (Random Delay)
 				document.getElementById("shape").style.display = "none";
